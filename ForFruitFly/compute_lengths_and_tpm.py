@@ -1,8 +1,8 @@
 #conda activate gem-py39 (自創獨立分析環境，防止版本衝突引發的bug)
 # 基因層級（推薦用於 gene-level TPM）
-#python D:\cch_data\fly_RTA\compute_lengths_and_tpm.py D:\cch_data\fly_RTA\fly_RTA_RNAseq\ref_BDGP6_32\Drosophila_melanogaster.BDGP6.32.53.gtf -o D:\cch_data\fly_RTA\fly_RTA_RNAseq\ref_BDGP6_32\gene_lengths.csv --mode gene
+#python D:\compute_lengths_and_tpm.py D:\ref_BDGP6_32\Drosophila_melanogaster.BDGP6.32.53.gtf -o D:\ref_BDGP6_32\gene_lengths.csv --mode gene
 # 轉錄本層級（若你做 transcript-level TPM）
-#python D:\cch_data\fly_RTA\compute_lengths_and_tpm.py D:\cch_data\fly_RTA\fly_RTA_RNAseq\ref_BDGP6_32\Drosophila_melanogaster.BDGP6.32.53.gtf -o D:\cch_data\fly_RTA\fly_RTA_RNAseq\ref_BDGP6_32\tx_lengths.csv --mode transcript
+#python D:\compute_lengths_and_tpm.py D:\ref_BDGP6_32\Drosophila_melanogaster.BDGP6.32.53.gtf -o D:\ref_BDGP6_32\tx_lengths.csv --mode transcript
 #!/usr/bin/env python3
 # save as compute_lengths_and_tpm.py
 import argparse, csv, sys
@@ -118,3 +118,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
